@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg" />
+
+    <TextView
+        android:id="@+id/tv_allowance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="100dp"
+        android:text="Enter your allowance for this day:"
+        android:textColor="@android:color/background_light"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/et_allowance"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_allowance"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"  />
+
+    <TextView
+        android:id="@+id/tv_expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_allowance"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="40dp"
+        android:text="Enter your total expenses for this day:"
+        android:textColor="@android:color/background_light"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/et_expense"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_expense"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"  />
+
+    <Button
+        android:id="@+id/bt_submit"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:layout_below="@+id/et_expense"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
+
